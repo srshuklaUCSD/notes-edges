@@ -1,4 +1,7 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://d3js.org/d3.v6.min.js"></script>
   <style>
     .node {
       fill: steelblue;
@@ -31,4 +34,6 @@
         .attr("cy", function(d) { return d.fisheye.y; })
         .attr("r", function(d) { return d.fisheye.z * 20; });
     });
-
+  </script>
+</body>
+</html>

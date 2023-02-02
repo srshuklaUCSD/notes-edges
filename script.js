@@ -1,17 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <script src="https://d3js.org/d3.v6.min.js"></script>
-  <style>
-    .node {
-      fill: steelblue;
-      stroke: #fff;
-    }
-  </style>
-</head>
-<body>
-  <svg width="500" height="200"></svg>
-  <script>
     var data = [
       {x: 100, y: 50, name: "one"},
       {x: 400, y: 150, name: "two"}
@@ -34,6 +20,4 @@
         .attr("cy", function(d) { return d.fisheye.y; })
         .attr("r", function(d) { return d.fisheye.z * 20; });
     });
-  </script>
-</body>
-</html>
+
